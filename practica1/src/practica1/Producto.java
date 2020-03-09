@@ -1,8 +1,7 @@
 package practica1;
 
 public class Producto {
-	
-	
+
 	private int code;
 	private String name;
 	private String description;

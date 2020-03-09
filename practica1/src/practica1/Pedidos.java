@@ -1,6 +1,7 @@
 package practica1;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Pedidos {
@@ -9,6 +10,7 @@ public class Pedidos {
 	ArrayList<Integer> quantity = new ArrayList<Integer>();
 	private Direccion delivery_address;
 	private Clientes client;
+	private String destinatario;
 	private Date estimated_date = new Date();
 	
 	public ArrayList<Producto> getProducts() {
@@ -51,7 +53,15 @@ public class Pedidos {
 		this.estimated_date = estimated_date;
 	}
 
+	public String getDestinatario() {
+		return destinatario;
+	}
 
+	public void setDestinatario(String destinatario) {
+		this.destinatario = destinatario;
+	}
+
+	
 	
 	public Pedidos() {
 		
